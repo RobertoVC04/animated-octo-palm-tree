@@ -49,3 +49,7 @@ jobs:
           from_step: 2
           to_step: 3
           branch_name: ci
+          - uses: actions/upload-artifact@main
+        with:
+          name: remark-lint-report
+          path: public/
